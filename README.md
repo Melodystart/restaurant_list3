@@ -9,9 +9,9 @@
 2. 安裝與執行步驟 (installation and execution)：   
 
 ． 將本專案clone至本機位置   
-  git clone https://github.com/Melodystart/restaurant_list2.git  
+  git clone https://github.com/Melodystart/restaurant_list3.git  
 
-． cd進入至專案資料夾restaurant_list2，並執行以下安裝套件及執行程式指令   
+． cd進入至專案資料夾restaurant_list3，並執行以下安裝套件及執行程式指令   
   npm install //安裝 npm 套件   
   npm i express //安裝 express 套件   
   npm install -g nodemon //安裝 nodemon   
