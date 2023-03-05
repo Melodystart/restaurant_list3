@@ -16,7 +16,8 @@
   npm i express //安裝 express 套件   
   npm install -g nodemon //安裝 nodemon   
   npm i express-handlebars //安裝 handlebars   
-  npm install dotenv --save //安裝 dotenv
+  npm install dotenv --save //安裝 dotenv   
+  npm install method-override   
 
 ． 請自行新增.env檔案並將以下資訊儲存於檔案中    
   MONGODB_URI= "您的MongoDB連線資訊"
@@ -33,4 +34,5 @@
   express: ^4.18.2,   
   express-handlebars: ^6.0.7   
   mongoose: ^7.0.0  
-  dotenv: ^16.0.3
+  dotenv: ^16.0.3  
+  method-override: ^3.0.0
