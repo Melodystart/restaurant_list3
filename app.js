@@ -6,11 +6,15 @@ const methodOverride = require('method-override')
 const routes = require('./routes') // 引用路由器
 require('./config/mongoose')
 
+//引用handlebars-helpers
+const hbshelpers = require('handlebars-helpers');
+const multihelpers = hbshelpers();
+
 const app = express()
 const port = 3000
 
 // setting template engine
-app.engine('handlebars', exphbs.engine({ defaultLayout: 'main' }))
+app.engine('handlebars', exphbs.engine({ helpers: multihelpers, defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
 
 // 用 app.use 規定每一筆請求都需要透過 body-parser 進行前置處理

@@ -32,14 +32,14 @@
           </div>
         </div>
 
-        <h4 class="mt-2">排序方式：{{sort}}</h4>
+        <h4 class="mt-2">排序方式：</h4>
         <div class="input-group">
           <select class="select" name="sort">
             <option value="none" selected disabled hidden>請選擇</option>
-            <option value="評分">評分</option>
-            <option value="類別">類別</option>
-            <option value="A->Z">A->Z</option>
-            <option value="Z->A">Z->A</option>
+            <option value="評分" {{#is sort "評分" }} selected {{/is}}>評分</option>
+            <option value="類別" {{#is sort "類別" }} selected {{/is}}>類別</option>
+            <option value="A->Z" {{#is sort "A->Z" }} selected {{/is}}>A->Z</option>
+            <option value="Z->A" {{#is sort "Z->A" }} selected {{/is}}>Z->A</option>
           </select>
         </div>
 
