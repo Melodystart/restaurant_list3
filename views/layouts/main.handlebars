@@ -6,6 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+
+  <header>
+    <!-- link css files here -->
+    <link rel="stylesheet" href="/stylesheets/index.css">
+    <!-- navigation -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+            width="30" height="30" class="d-inline-block align-top" alt="餐廳清單">
+          <strong>{{#if isAuthenticated}}{{ user.name}}'s {{/if}}
+            餐廳清單</strong>
+          {{#if isAuthenticated}}
+          <a href="/users/logout" class="btn btn-primary btn-block">Logout</a>
+          {{else}}
+          <a href="/users/login" class="btn btn-primary btn-block">Login</a>
+          {{/if}}
+        </a>
+      </div>
+    </nav>
+  </header>
   <!-- link css files here -->
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
 </head>
