@@ -18,8 +18,10 @@ function sortMethod(sort) {
 
 // 設定路由：首頁
 router.get('/', (req, res) => {
-  Restaurant.find()
+  const userId = req.user._id   // 變數設定
+  Restaurant.find({ userId: userId })
     .lean() // 把 Mongoose 的 Model 物件轉換成乾淨的 JavaScript 資料陣列
+    .sort({ _id: 'asc' })
     .then(restaurants => res.render('index', { restaurants: restaurants }))
     .catch(error => console.log(error))
 })

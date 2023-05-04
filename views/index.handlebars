@@ -1,18 +1,6 @@
 <header>
   <!-- link css files here -->
   <link rel="stylesheet" href="/stylesheets/index.css">
-  <!-- navigation -->
-  <nav class="navbar navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="/">
-        <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
-          width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
-        <strong>我的餐廳清單</strong>
-      </a>
-      <a href="/restaurants/new" class="navbar-brand"><strong>新增餐廳</strong></a>
-    </div>
-  </nav>
-
   <div class="banner"></div>
 </header>
 
@@ -42,6 +30,8 @@
             <option value="Z->A" {{#is sort "Z->A" }} selected {{/is}}>Z->A</option>
           </select>
         </div>
+
+        <h4 class="mt-3"><a href="/restaurants/new" class="btn btn-major">新增餐廳</a></h4>
 
       </form>
 
