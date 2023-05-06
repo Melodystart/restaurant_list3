@@ -6,7 +6,8 @@
   使用者可以瀏覽一家餐廳的詳細資訊  
   使用者可以瀏覽全部所有餐廳  
   使用者可以修改一家餐廳的資訊  
-  使用者可以刪除一家餐廳  
+  使用者可以刪除一家餐廳     
+  使用者可以註冊帳號，註冊的資料包括：名字、email、密碼、確認密碼     
 
 2. 安裝與執行步驟 (installation and execution)：   
 
@@ -14,17 +15,21 @@
   git clone https://github.com/Melodystart/restaurant_list3.git  
 
 ． cd進入至專案資料夾restaurant_list3，並執行以下安裝套件及執行程式指令   
-  npm install //安裝 npm 套件   
-  npm i express //安裝 express 套件   
-  npm install -g nodemon //安裝 nodemon   
-  npm i express-handlebars //安裝 handlebars   
-  npm install dotenv --save //安裝 dotenv   
-  npm install method-override //安裝 method-override     
-  npm i -g express-generator //安裝 Express Generator    
-  npm install --save handlebars-helpers //安裝handlebars-helpers      
+  npm install     
+  npm i express    
+  npm install -g nodemon    
+  npm i express-handlebars    
+  npm install dotenv --save    
+  npm install method-override      
+  npm i -g express-generator     
+  npm install --save handlebars-helpers       
+  npm install bcryptjs      
+  npm install express-session       
+  npm install passport         
+  npm install passport-facebook    
+  npm install passport-local       
+  npm install connect-flash     
 
-  npm install passport-facebook
-  
 ． 請自行新增.env檔案並將以下資訊儲存於檔案中    
   MONGODB_URI= "您的MongoDB連線資訊"
 
@@ -43,3 +48,9 @@
   dotenv: ^16.0.3  
   method-override: ^3.0.0     
   handlebars-helpers: "^0.10.0"            
+  bcryptjs: "^2.4.3"      
+  connect-flash: "^0.1.1"      
+  express-session: "^1.17.3"      
+  passport": "^0.6.0"      
+  passport-facebook: "^3.0.0"      
+  passport-local: "^1.0.0"      
