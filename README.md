@@ -21,8 +21,10 @@
   npm install dotenv --save //安裝 dotenv   
   npm install method-override //安裝 method-override     
   npm i -g express-generator //安裝 Express Generator    
-  npm install --save handlebars-helpers //安裝handlebars-helpers       
+  npm install --save handlebars-helpers //安裝handlebars-helpers      
 
+  npm install passport-facebook
+  
 ． 請自行新增.env檔案並將以下資訊儲存於檔案中    
   MONGODB_URI= "您的MongoDB連線資訊"
 
